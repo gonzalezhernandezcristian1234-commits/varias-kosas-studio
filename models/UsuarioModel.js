@@ -1,26 +1,25 @@
 const usuarios = [
     {
-        nombre: "Andres Gonzalez Hernandez",
-        telefono: "3023171666",
-        correo: "correo@correo.com",
-        contrasena: "1234567890",
-        id: "id1234567890"
+        nombre: "pablito patricio de la osa",
+        telefono: "123456789",
+        correo: "pablito@pablito.com",
+        contrasena: "1234",
+        id: "2008"
     },
     {
-        nombre: "lucia fernanda",
-        telefono: "3177394654",
+        nombre: "ana juliana lopez",
+        telefono: "3032343434",
         correo: "correo.sena@gmail.com",
-        contrasena: "0987654321",
-        id: "id0987654321"
+        contrasena: "123",
+        id: "200888"
     }
 ];
 
-export function guardaUsuario() {
-
+export function guardarUsuario() {
+    
 }
 
 export function buscarUsuario(correo, contrasena) {
-    let auth = usuarios.some((usuario) => correo == usuario.correo && contrasena == usuario.contrasena)
+    let auth = usuarios.find((usuario) => correo == usuario.correo && contrasena == usuario.contrasena) 
     return auth
-
 }
